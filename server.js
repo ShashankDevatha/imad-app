@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 
 var articleOne={
     title : 'article-one',
-    date: 'Feb 18,2018',
+    date : 'Feb 18,2018',
     heading : 'Article-one',
     content : ` <p>
             This is the content for my First Article.Please enjoy reading
@@ -20,7 +20,7 @@ var articleOne={
         </p>
         <p>
             This is the content for my First Article.Please enjoy reading
-        </p>`
+        </p>`,
     
 };
 function templatedata(data){
@@ -32,7 +32,7 @@ function templatedata(data){
 var htmlTemp=
 `<html>
     <head>
-        <title><title>
+        <title>${title}<title>
         <meta name="viewport" content="width=device-width , intial-scale=1">
         <link href="ui/style.css" rel="spreadsheet"
         </head>
