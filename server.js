@@ -7,7 +7,6 @@ app.use(morgan('combined'));
 
 var articles = {
  'article-one' : {
-    title : 'article-one',
     date : 'Feb 18,2018',
     heading : 'Article-one',
     content : ` <p>
@@ -36,7 +35,6 @@ function templatedata(data){
 var htmlTemp=
 `<html>
     <head>
-        <title>${title}<title>
         <meta name="viewport" content="width=device-width , intial-scale=1">
         <link href="ui/style.css" rel="spreadsheet"
         </head>
