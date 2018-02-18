@@ -36,7 +36,7 @@ var htmlTemp=
 `<html>
     <head>
         <meta name="viewport" content="width=device-width , intial-scale=1">
-        <link href="ui/style.css" rel="spreadsheet"
+        <link href="ui/style.css" rel="spreadsheet">
         </head>
     <body>
         
