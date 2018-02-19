@@ -14,7 +14,6 @@ app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
-
 var counter;
 app.get('/counter', function (req, res) {
     counter+=1;
