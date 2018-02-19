@@ -14,10 +14,12 @@ app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
-var counter;
+var counter =0;
 app.get('/counter', function (req, res) {
     counter+=1;
-    res.send(counter.toString());});
+    res.send(counter.toString());
+    
+});
   
 
 app.get('/article-one',function(req,res){
