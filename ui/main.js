@@ -7,5 +7,5 @@ element.innerHtml='New Value';
 var move = document.getElementById('img');
 move.onclick = function(){
    
- img.style.marginleft = '20px';
+ img.style.marginLeft = '20px';
 } ;
