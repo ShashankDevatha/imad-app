@@ -8,7 +8,7 @@ move.onclick = function(){
  img.style.marginLeft = '100px';
 } ;
 var counter=0;
-var button = doucument.getElementById("counter");
+var button = doucument.getElementById('counter');
 button.onclick = function ()
 {
     counter= counter+1;
