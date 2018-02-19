@@ -4,8 +4,8 @@ var content = document.getElementById('main-text');
 content;
 element.innerHtml='New Value';
 //Moving The Image
-var move = document.getElementById("img");
+var move = document.getElementById('img');
 move.onclick = function(){
    
- img.style.marginleft = "20px";
+ img.style.marginleft = '20px';
 } ;
