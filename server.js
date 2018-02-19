@@ -5,58 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articles = {
- 'article-one' : {
-    date : 'Feb 18,2018',
-    heading : 'Article-one',
-    content : ` <p>
-            This is the content for my First Article.Please enjoy reading
-            </p>
-        <p>
-            This is the content for my First Article.Please enjoy reading
-        </p>
-        <p>
-            This is the content for my First Article.Please enjoy reading
-        </p>
-        <p>
-            This is the content for my First Article.Please enjoy reading
-        </p>`,
-    
-},
-articletwo:{}
-};
 
-function templatedata(data){
-    var heading=data.heading;
-    var date= data.date;
-    var content= data.content;
-    
-var htmlTemp=
-`<html>
-    <head>
-        <meta name="viewport" content="width=device-width , intial-scale=1">
-        <link href="ui/style.css" rel="spreadsheet">
-        </head>
-    <body>
-        
-        <div class="container">
-            <div>
-            <a href="/">click here for home</a>
-        </div>
-        <h1>
-            ${heading}
-        </h1>
-    <div>
-        ${date}
-    </div>
-    <div>
-       ${content}
-    </div>
-    </div>
-    </body>
-</html>`;
-return htmlTemp;
-}
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
