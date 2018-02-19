@@ -5,5 +5,5 @@ var content = document.getElementById('main-text');
 var move = document.getElementById('img');
 move.onclick = function(){
    
- img.style.marginLeft = '20px';
+ img.style.marginLeft = '100px';
 } ;
