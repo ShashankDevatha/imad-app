@@ -22,7 +22,11 @@ app.get('/test-db',function(req,res){
     {
         if(err)
         {
-            res.status(500).send(err.toStringify(result));
+            res.status(500).send(err.toString(result));
+        }
+        else
+        {
+            res.send(JSON.stringify(result));
         }
     });
 });
